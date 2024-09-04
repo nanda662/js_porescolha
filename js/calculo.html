@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Áreas</title>
+    <script>
+        function calcularAreaRetangulo() {
+            let base = parseFloat(prompt("Informe a base do retângulo:"));
+            let altura = parseFloat(prompt("Informe a altura do retângulo:"));
+            let area = base * altura;
+            alert(`A área do retângulo é: ${area}`);
+        }
+
+        function calcularAreaQuadrado() {
+            let lado = parseFloat(prompt("Informe o lado do quadrado:"));
+            let area = lado * lado;
+            alert(`A área do quadrado é: ${area}`);
+        }
+
+        function calcularAreaLosango() {
+            let diagonalMaior = parseFloat(prompt("Informe a diagonal maior do losango:"));
+            let diagonalMenor = parseFloat(prompt("Informe a diagonal menor do losango:"));
+            let area = (diagonalMaior * diagonalMenor) / 2;
+            alert(`A área do losango é: ${area}`);
+        }
+
+        function calcularAreaTrapezio() {
+            let baseMaior = parseFloat(prompt("Informe a base maior do trapézio:"));
+            let baseMenor = parseFloat(prompt("Informe a base menor do trapézio:"));
+            let altura = parseFloat(prompt("Informe a altura do trapézio:"));
+            let area = ((baseMaior + baseMenor) * altura) / 2;
+            alert(`A área do trapézio é: ${area}`);
+        }
+
+        function calcularAreaParalelogramo() {
+            let base = parseFloat(prompt("Informe a base do paralelogramo:"));
+            let altura = parseFloat(prompt("Informe a altura do paralelogramo:"));
+            let area = base * altura;
+            alert(`A área do paralelogramo é: ${area}`);
+        }
+
+        function calcularAreaTriangulo() {
+            let base = parseFloat(prompt("Informe a base do triângulo:"));
+            let altura = parseFloat(prompt("Informe a altura do triângulo:"));
+            let area = (base * altura) / 2;
+            alert(`A área do triângulo é: ${area}`);
+        }
+
+        function calcularAreaCirculo() {
+            let raio = parseFloat(prompt("Informe o raio do círculo:"));
+            let area = 3.14159 * (raio * raio);
+            alert(`A área do círculo é: ${area}`);
+        }
+    </script>
+</head>
+<body>
+    <h1>Calculadora de Áreas</h1>
+    <nav>
+        <ul>
+            <li><button onclick="calcularAreaRetangulo()">Calcular Área do Retângulo</button></li>
+            <li><button onclick="calcularAreaQuadrado()">Calcular Área do Quadrado</button></li>
+            <li><button onclick="calcularAreaLosango()">Calcular Área do Losango</button></li>
+            <li><button onclick="calcularAreaTrapezio()">Calcular Área do Trapézio</button></li>
+            <li><button onclick="calcularAreaParalelogramo()">Calcular Área do Paralelogramo</button></li>
+            <li><button onclick="calcularAreaTriangulo()">Calcular Área do Triângulo</button></li>
+            <li><button onclick="calcularAreaCirculo()">Calcular Área do Círculo</button></li>
+        </ul>
+    </nav>
+</body>
+</html>
