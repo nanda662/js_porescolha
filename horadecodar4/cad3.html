@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function gerenciarListaDeCompras() {
+    let frutas = ["Maçã", "Banana", "Laranja", "Manga", "Pera"];
+
+    console.log("Lista de frutas disponíveis:");
+    console.log(frutas.join(", "));
+
+    while (frutas.length > 0) {
+        let frutaParaRemover = prompt("Digite o nome da fruta para remover (ou 'SAIR' para encerrar):");
+
+        if (frutaParaRemover.toUpperCase() === "SAIR") {
+            break;
+        }
+        let index = frutas.indexOf(frutaParaRemover);
+
+        if (index !== -1) {
+            frutas.splice(index, 1);
+            console.log("Fruta foi retirada da lista.");
+        } else {
+            console.log("Fruta indisponível no nosso mercado.");
+        }
+        if (frutas.length > 0) {
+            console.log("Lista de frutas atualizada:");
+            console.log(frutas.join(", "));
+        }
+    }
+    if (frutas.length === 0) {
+        console.log("Lista de compras finalizada.");
+    }
+}
+gerenciarListaDeCompras();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

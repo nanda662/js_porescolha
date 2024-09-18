@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function cadastrarEstudantes() {
+    let estudantes = []; // Array para deixar os nomes dos estudantes
+
+    while (true) {
+        let nome = prompt("Digite o nome do estudante (ou 'PARE' para encerrar):");
+
+        // Ve se o usuário quer parar o cadastro
+        if (nome.toUpperCase() === "PARE") {
+            break; // Sai do loop
+        }
+
+        // Adiciona o nome do mano no array
+        estudantes.push(nome);
+    }
+
+    console.log(`Quantidade de estudantes cadastrados: ${estudantes.length}`);
+    console.log("Lista de estudantes:");
+    for (let i = 0; i < estudantes.length; i++) {
+        console.log(`${i + 1}. ${estudantes[i]}`);
+    }
+}
+cadastrarEstudantes();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
