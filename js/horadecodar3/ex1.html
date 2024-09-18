@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let valor1, valor2;
+
+// Leitura do primeiro valor
+valor1 = parseFloat(prompt("Informe o primeiro valor:"));
+
+// Leitura do segundo valor, com validação para garantir que ele seja maior que zero
+do {
+    valor2 = parseFloat(prompt("Informe o segundo valor (deve ser maior que zero):"));
+    if (valor2 <= 0) {
+        alert("O segundo valor não pode ser igual ou menor que zero. Tente novamente.");
+    }
+} while (valor2 <= 0);
+
+// Realiza a divisão e exibe o resultado
+let resultado = valor1 / valor2;
+alert(`O resultado da divisão de ${valor1} por ${valor2} é: ${resultado}`);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

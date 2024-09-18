@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+function bombaRelogio() {
+    let tempo = 30; 
+    
+    // Usando setInterval para criar a contagem regressiva
+    let contagem = setInterval(function() {
+        if (tempo >= 0) {
+            console.log(tempo); // Exibindo o tempo atual
+            tempo--;
+        } else {
+            console.log("EXPLOSÃO!"); 
+            clearInterval(contagem); // Para a contagem
+        }
+    }, 1000); // O intervalo é de 1 segundo (1000 ms)
+}
+
+// Executando a função da bomba no console
+bombaRelogio();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

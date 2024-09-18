@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function calcularMediaAlunos() {
+    let aprovados = 0; // Contador de alunos aprovados
+
+    do {
+        let nota1 = parseFloat(prompt("Informe a primeira nota:"));
+        let nota2 = parseFloat(prompt("Informe a segunda nota:"));
+
+        let media = (nota1 + nota2) / 2;
+
+        
+        console.log(`A média final do aluno é: ${media.toFixed(2)}`);
+
+        if (media >= 9.5) {
+            console.log("Aluno aprovado!");
+            aprovados++; // Incrementando o número de aprovados
+        } else {
+            console.log("Aluno reprovado.");
+        }
+
+        var resposta = prompt("Calcular a média de outro aluno? Sim/Não (S/N)").toUpperCase();
+
+    } while (resposta === "S"); // Continua se a resposta for "S"
+
+    console.log(`Quantidade de alunos aprovados: ${aprovados}`);
+}
+
+// para ver a lista, basta ir no console vapo
+calcularMediaAlunos();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
